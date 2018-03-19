@@ -27,9 +27,9 @@ const Products = props => {
 						<Text style={styles.text}>{producto.text}</Text>
 						{producto.params && 
 							<View style={{marginTop: 20}}>
-								<Text style={Styles.text}>Tipo de empaque: {producto.params.empaque}</Text>
-								<Text style={Styles.text}>Almacenamiento: {producto.params.almacenamiento}</Text>
-								<Text style={Styles.text}>Registro Sanitario: {producto.params.registro}</Text>
+								<Text style={styles.text}>Tipo de empaque: {producto.params.empaque}</Text>
+								<Text style={styles.text}>Almacenamiento: {producto.params.almacenamiento}</Text>
+								<Text style={styles.text}>Registro Sanitario: {producto.params.registro}</Text>
 
 							</View>
 						}
