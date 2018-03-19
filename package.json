@@ -10,9 +10,11 @@
     "airbnb-prop-types": "^2.8.1",
     "babel-plugin-transform-replace-object-assign": "^0.2.1",
     "prop-types": "^15.6.1",
-    "react": "^16.3.0-alpha.1",
+    "react": "^16.2.0",
     "react-native": "0.54.2",
+    "react-native-justified-text": "^1.0.3",
     "react-native-linear-gradient": "^2.4.0",
+    "react-native-vector-icons": "^4.5.0",
     "react-navigation": "^1.5.7"
   },
   "devDependencies": {

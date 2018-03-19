@@ -1,11 +1,8 @@
 import React from 'react';
 import {
-  Platform,
-  StyleSheet,
+ 	StyleSheet,
 	Text,
-	Image,
 	ScrollView,
-  View
 } from 'react-native';
 
 const MisionVision = props => {
@@ -34,7 +31,7 @@ const styles = StyleSheet.create({
 	},
 	title: {
 		fontSize: 26,
-		color: '#e69847',
+		color: '#FFB74D',
 		textAlign: 'center'
 	},
 	text: {

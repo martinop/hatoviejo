@@ -1,14 +1,11 @@
 import React from 'react';
 import {
-  Platform,
-  StyleSheet,
+  	StyleSheet,
 	Text,
-	Image,
 	ScrollView,
-  View
 } from 'react-native';
 
-const History = props => {
+const Historyy = props => {
 	return (
 		<ScrollView style={styles.container}>
 			<Text style={styles.text}>
@@ -22,7 +19,7 @@ const History = props => {
 				En nuestros inicios la cobertura geográfica del mercado era específicamente local,
 				atendiendo el segmento geográfico de la ciudad de Maracaibo, principalmente. 
 			</Text>
-			<Text style={styles.text}>
+			<Text style={[styles.text,{paddingBottom: 30}]}>
 				Hoy somos una marca registrada a nivel nacional, que atiende el segmento geográfico del occidente del país con
 				presencia en entidades federales: Zulia, Falcón, Trujillo, Mérida y Barquisimeto incursionando además en 
 				los mercados del centro del país: Valencia y Maracay. La historia en productos de la empresa pasa de la 
@@ -37,12 +34,12 @@ const History = props => {
 }
 const styles = StyleSheet.create({
 	container: {
-		padding: 10,
+		padding: 10
 	},
 	text: {
-		textAlign: 'center',
+		textAlign: 'left',
 		fontSize: 18,
 		marginBottom: 10
 	},
 });
-export default History
+export default Historyy

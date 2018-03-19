@@ -1,58 +1,89 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+import React from 'react';
+import { StackNavigator } from 'react-navigation'
 
-import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import Historyy from './Containers/History'
+import Home from './Containers/Home'
+import MisionVision from './Containers/MisionVision'
+import Perfil from './Containers/Perfil'
+import Us from './Containers/Us'
+import Productos from './Containers/Products'
+import Cremas from './Containers/Cremas'
+import Jugos from './Containers/Jugos'
+import Mantequilla from './Containers/Mantequilla'
+import Quesos from './Containers/Quesos'
+import Sueros from './Containers/Sueros'
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-      </View>
-    );
+export default StackNavigator({
+  Home: {
+    screen: Home,
+    navigationOptions: {
+      header: null
+    }
+  },
+  Us: {
+    screen: Us,
+    navigationOptions: ({navigation}) => ({
+      title: 'Nosotros'
+    }) 
+  },
+  Historyy: {
+    screen: Historyy,
+    navigationOptions: ({navigation}) => ({
+      title: 'Historia'
+    })
+  },
+  MisionVision: {
+    screen: MisionVision,
+    navigationOptions: ({navigation}) => ({
+      title: 'Mision y Vision'
+    })
+  },
+  Perfil: {
+    screen: Perfil,
+    navigationOptions: ({navigation}) => ({
+      title: 'Perfil Corporativo'
+    })
+  },
+  Productos: {
+    screen: Productos,
+    navigationOptions: ({navigation}) => ({
+      title: 'Productos'
+    })
+  },
+  Cremas: {
+    screen: Cremas,
+    navigationOptions: ({navigation}) => ({
+      title: 'Cremas'
+    })
+  },
+  Jugos: {
+    screen: Jugos,
+    navigationOptions: ({navigation}) => ({
+      title: 'Jugos'
+    })
+  },
+  Mantequilla: {
+    screen: Mantequilla,
+    navigationOptions: ({navigation}) => ({
+      title: 'Mantequilla'
+    })
+  },
+  Quesos: {
+    screen: Quesos,
+    navigationOptions: ({navigation}) => ({
+      title: 'Quesos'
+    })
+  },
+  Sueros: {
+    screen: Sueros,
+    navigationOptions: ({navigation}) => ({
+      title: 'Sueros'
+    })
   }
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+}, {
+  initialRouteName: 'Home',
+  navigationOptions: {
+    headerStyle: { backgroundColor: '#F57C00' },
+    headerTitleStyle: { fontWeight: '300' }
+  }
+})

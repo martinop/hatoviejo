@@ -14,8 +14,8 @@ export default class Home extends Component {
 
   render() {
     const verticalPositionAnimation = {
-      toValue: -350,
-      duration: 45000
+      toValue: -285,
+      duration: 47000
     }
     return (
       <BackgroundImageWithLogo
@@ -35,17 +35,20 @@ export default class Home extends Component {
 					<FullButton
 						text='Productos'
 						style={styles.comunBtn}
+						onPress={()=>this.props.navigation.navigate('Productos')}
 						containerStyle={{marginBottom: 15}}
 					/>
 					<FullButton
 						text='Recetas'
-						style={styles.comunBtn}
+						style={{backgroundColor: 'lightgray'}}
 						containerStyle={{marginBottom: 15}}
+						disabled
 					/>
 					<FullButton
-						style={styles.loginBtn}
+						style={{backgroundColor: 'lightgray'}}
 						containerStyle={{marginBottom: 15}}
 						text='Otros'
+						disabled
 					/>
 				</View>
       </BackgroundImageWithLogo>
@@ -63,9 +66,9 @@ const styles = StyleSheet.create({
     marginLeft: Metrics.screenWidth * (1 - 0.9) / 2,
 	},
 	comunBtn: {
-		backgroundColor: '#e69847'
+		backgroundColor: '#FFB74D'
 	},
 	loginBtn: {
-		backgroundColor: '#855a35'
+		backgroundColor: '#F57C00'
 	}
 });
