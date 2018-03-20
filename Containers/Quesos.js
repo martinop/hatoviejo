@@ -8,14 +8,24 @@ import Products from '../Components/Products'
 
 const data = [
     {
-        image: Images.cremaLeche,
-        title: 'Crema de leche',
-        text: "La crema de leche, es una sustancia de consistencia grasa y tonalidad blanca o amarillenta que se encuentra de forma emulsionada en la leche recién ordeñada o cruda; es decir, en estado natural y que no ha pasado por ningún proceso artificial que elimina elementos grasos. \n\n Por otro lado, es un lácteo que posee una textura agradable al tacto de los consumidores. Este producto constituido principalmente por glóbulos de materia grasa que se encuentra flotando en la superficie de la leche cruda; por esto se dice que es una emulsión de grasa en agua. \n\n Esta capa se puede apreciar dejando cierta cantidad de leche cruda, sin homogeneizar ni descremar. Sin embargo, la crema de leche HATO VIEJO pasa por un proceso de estandarización considerándola como una crema saludable y baja en grasa en comparación al resto de las demás."
+        image: Images.quesoBlanco,
+        title: 'Queso Blanco',
+        text: "El queso blanco de Hato Viejo, es un alimento muy nutritivo con el podrás complacer el paladar de toda tu familia, conocido y amigo. Es una solución práctica que te permite realizar cualquier plato de comida."        ,
+        params: {
+            empaque: 'Bolsa Plástica Fermoencogible',
+            almacenamiento: 'Mantener bajo refrigeración a una temperatura no mayor de 4°',
+            registro: 'A-37-407.'
+        }
     },
     {
-        image: Images.cremaLeche,
-        title: 'Crema de especias',
-        text: "La crema de leche, es una sustancia de consistencia grasa y tonalidad blanca o amarillenta que se encuentra de forma emulsionada en la leche recién ordeñada o cruda; es decir, en estado natural y que no ha pasado por ningún proceso artificial que elimina elementos grasos. \n Por otro lado, es un lácteo que posee una textura agradable al tacto de los consumidores. Este producto constituido principalmente por glóbulos de materia grasa que se encuentra flotando en la superficie de la leche cruda; por esto se dice que es una emulsión de grasa en agua. \n Esta capa se puede apreciar dejando cierta cantidad de leche cruda, sin homogeneizar ni descremar. Sin embargo, la crema de leche HATO VIEJO pasa por un proceso de estandarización considerándola como una crema saludable y baja en grasa en comparación al resto de las demás."
+        image: Images.quesoMozarella,
+        title: 'Queso Mozarella',
+        text: "El queso mozzarella de Hato Viejo, su textura es suave y muy bajo en sal, es utilizados en platos principales como: comida que se puede gratinar, pizza entre otras comidas.",
+        params: {
+            empaque: 'Envase de cartón',
+            almacenamiento: 'Mantener bajo refrigeración a una temperatura no mayor de 4°',
+            registro: 'A-36-595'
+        }
     }
 ]
 const Quesos = props => {

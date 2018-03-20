@@ -8,7 +8,7 @@ import Products from '../Components/Products'
 
 const data = [
     {
-        image: Images.cremaLeche,
+        image: Images.jugoNaranja,
         title: 'Jugo de naranja',
         text: "Los jugos y néctares son bebidas saludables que posee un valor vitamínico, las cuales son fuentes de energías para el desarrollo de sus actividades diarias. Los jugos de hato viejo, ofrecen una variedad de sabores provenientes de las mejores pulpas del mercado donde, la manzana, la pera y el durazno son exportadas de Chile y Argentina mientras que la naranja es totalmente criollas “Venezuela”.",
         params: {
@@ -18,7 +18,7 @@ const data = [
         }
     },
     {
-        image: Images.cremaLeche,
+        image: Images.nectarPera,
         title: 'Nectar de pera',
         text: "Los jugos y néctares son bebidas saludables que posee un valor vitamínico, las cuales son fuentes de energías para el desarrollo de sus actividades diarias. Los jugos de hato viejo, ofrecen una variedad de sabores provenientes de las mejores pulpas del mercado donde, la manzana, la pera y el durazno son exportadas de Chile y Argentina mientras que la naranja es totalmente criollas “Venezuela”.",
         params: {
@@ -28,7 +28,7 @@ const data = [
         }
     },
     {
-        image: Images.cremaLeche,
+        image: Images.nectarDurazno,
         title: 'Nectar de durazno',
         text: "Los jugos y néctares son bebidas saludables que posee un valor vitamínico, las cuales son fuentes de energías para el desarrollo de sus actividades diarias. Los jugos de hato viejo, ofrecen una variedad de sabores provenientes de las mejores pulpas del mercado donde, la manzana, la pera y el durazno son exportadas de Chile y Argentina mientras que la naranja es totalmente criollas “Venezuela”.",
         params: {
@@ -38,7 +38,7 @@ const data = [
         }
     },
     {
-        image: Images.cremaLeche,
+        image: Images.nectarManzana,
         title: 'Nectar de manzana',
         text: "Los jugos y néctares son bebidas saludables que posee un valor vitamínico, las cuales son fuentes de energías para el desarrollo de sus actividades diarias. Los jugos de hato viejo, ofrecen una variedad de sabores provenientes de las mejores pulpas del mercado donde, la manzana, la pera y el durazno son exportadas de Chile y Argentina mientras que la naranja es totalmente criollas “Venezuela”.",
         params: {

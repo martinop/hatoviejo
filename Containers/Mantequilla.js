@@ -8,14 +8,14 @@ import Products from '../Components/Products'
 
 const data = [
     {
-        image: Images.cremaLeche,
-        title: 'Crema de leche',
-        text: "La crema de leche, es una sustancia de consistencia grasa y tonalidad blanca o amarillenta que se encuentra de forma emulsionada en la leche recién ordeñada o cruda; es decir, en estado natural y que no ha pasado por ningún proceso artificial que elimina elementos grasos. \n\n Por otro lado, es un lácteo que posee una textura agradable al tacto de los consumidores. Este producto constituido principalmente por glóbulos de materia grasa que se encuentra flotando en la superficie de la leche cruda; por esto se dice que es una emulsión de grasa en agua. \n\n Esta capa se puede apreciar dejando cierta cantidad de leche cruda, sin homogeneizar ni descremar. Sin embargo, la crema de leche HATO VIEJO pasa por un proceso de estandarización considerándola como una crema saludable y baja en grasa en comparación al resto de las demás."
-    },
-    {
-        image: Images.cremaLeche,
-        title: 'Crema de especias',
-        text: "La crema de leche, es una sustancia de consistencia grasa y tonalidad blanca o amarillenta que se encuentra de forma emulsionada en la leche recién ordeñada o cruda; es decir, en estado natural y que no ha pasado por ningún proceso artificial que elimina elementos grasos. \n Por otro lado, es un lácteo que posee una textura agradable al tacto de los consumidores. Este producto constituido principalmente por glóbulos de materia grasa que se encuentra flotando en la superficie de la leche cruda; por esto se dice que es una emulsión de grasa en agua. \n Esta capa se puede apreciar dejando cierta cantidad de leche cruda, sin homogeneizar ni descremar. Sin embargo, la crema de leche HATO VIEJO pasa por un proceso de estandarización considerándola como una crema saludable y baja en grasa en comparación al resto de las demás."
+        image: Images.mantequilla,
+        title: 'Mantequilla Hato Viejo',
+        text: "La mantequilla hato viejo, es muy versátil y cremosa, ya que puede prepararse en algunas comidas como: en los espaguetis, en un almuerzo nutritivo y ligero hasta en postres. Se funde fácilmente, aporta principalmente grasa, las grasas son necesarias para la adsorción de vitaminas A, D, E, K y son fuente de energía en el organismo.",
+        params: {
+            empaque: 'Tina plástica',
+            almacenamiento: 'Mantener bajo refrigeración a una temperatura no mayor de 4°',
+            registro: 'A-36-598.'
+        }
     }
 ]
 const Mantequilla = props => {
