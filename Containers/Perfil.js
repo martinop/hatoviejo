@@ -48,7 +48,7 @@ class Perfil extends Component {
     }
     render(){
         return (
-            <ScrollView contentContainerStyle={styles.container}>
+            <ScrollView style={styles.main} contentContainerStyle={styles.container}>
                 {perfiles.map((perfil, index) =>
                     <TouchableOpacity
                         key={index}
@@ -88,12 +88,14 @@ class Perfil extends Component {
 
 }
 const styles = StyleSheet.create({
+    main: {
+        backgroundColor: '#a6cbe2'
+    },
 	container: {
         width: '100%',
         display: 'flex',
         flexWrap: 'wrap',
         flexDirection: 'row',
-        backgroundColor: '#a6cbe2'
     },
     itemContainer: {
         width: '50%',

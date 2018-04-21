@@ -7,6 +7,8 @@ import MisionVision from './Containers/MisionVision'
 import Perfil from './Containers/Perfil'
 import Us from './Containers/Us'
 import Productos from './Containers/Products'
+import Pedidos from './Containers/Pedidos'
+import Tiendas from './Containers/Tiendas'
 import Cremas from './Containers/Cremas'
 import Jugos from './Containers/Jugos'
 import Mantequilla from './Containers/Mantequilla'
@@ -42,6 +44,18 @@ export default StackNavigator({
     screen: Perfil,
     navigationOptions: ({navigation}) => ({
       title: 'Perfil Corporativo'
+    })
+  },
+  Pedidos: {
+    screen: Pedidos,
+    navigationOptions: ({navigation}) => ({
+      title: 'Pedidos'
+    })
+  },
+  Tiendas: {
+    screen: Tiendas,
+    navigationOptions: ({navigation}) => ({
+      title: 'Tiendas Afiliadas'
     })
   },
   Productos: {

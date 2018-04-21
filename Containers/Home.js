@@ -32,7 +32,8 @@ export default class Home extends Component {
 							onPress={()=>this.props.navigation.navigate('Productos')}
 						/>
 						<FullButton
-							text='Recetas'
+							text='Pedidos'
+							onPress={()=>this.props.navigation.navigate('Pedidos')}
 						/>
 						<FullButton
 							text='Otros'
