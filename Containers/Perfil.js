@@ -1,90 +1,96 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {
     StyleSheet,
 	Text,
 	Image,
     ScrollView,
-    View
+    View,
+    TouchableOpacity,
+    Modal
 } from 'react-native';
 import Metrics from '../Themes/Metrics'
 
 import Images from '../Images'
-const Perfil = props => {
-	return (
-		<ScrollView style={styles.container}>
-			<Text style={styles.text}>
-                Los departamentos que conforman nuestra empresa Uprocosa, tienen la misión de trabajar conjuntamente para lograr
-                todos los objetivos propuestos de una manera colaborativa y ágil manteniendo el posicionamiento de nuestra marca 
-                Hato viejo en el mercado de lácteos.
-			</Text>
-            <View style={styles.iconContainer}>
-                <Image
-                    source={Images.rrhh}
-                    resizeMode='cover'
-                    style={styles.icon}
-                />
-            </View>
-			<Text style={styles.title}>Recursos Humanos</Text>
-            <Text style={styles.text}>Selección, capacitación y supervisión del personal de Hato viejo.</Text>
-            <View style={styles.iconContainer}>
-                <Image
-                    source={Images.ventas}
-                    resizeMode='cover'
-                    style={styles.icon}
-                />
-            </View>
-			<Text style={styles.title}>Administracion</Text>
-            <Text style={styles.text}>Planificar, organizar dirigir y controlar todos los procesos administrativos
-                de nuestra empresa orientado a la gestión financiera, fiscal, compras, humana y tecnológica.</Text>
-            <View style={styles.iconContainer}>
-                <Image
-                    source={Images.admin}
-                    resizeMode='cover'
-                    style={styles.icon}
-                />
-            </View>
-			<Text style={styles.title}>Produccion</Text>
-            <Text style={styles.text}>Procesos de manufactura, logística, abastecimiento, calidad y mantenimiento, garantizando
-                la eficiencia y eficacia en la gestión de los costos operacionales.</Text>
-            <View style={styles.iconContainer}>
-                <Image
-                    source={Images.mercadeo}
-                    resizeMode='cover'
-                    style={styles.icon}
-                />
-            </View>
-			<Text style={styles.title}>Mercadeo</Text>
-            <Text style={[styles.text, {marginBottom: 30}]}>Investigación de mercados, ejecución y planificación de estrategias relacionadas a las 4 P del mercado,
-                márgenes de utilidad, imagen y posicionamiento de marcas. Lanzamiento de nuevos productos, para el desarrollo de 
-                negocios con la finalidad de satisfacer a nuestros consumidores.</Text>
-		</ScrollView>
-	);
+
+const perfiles = [
+    {image: Images.rrhh, text: 'Recursos Humanos'},
+    {image: Images.contabilidad, text: 'Contabilidad'},
+    {image: Images.mercadeo, text: 'Mercadeo'},
+    {image: Images.produccion, text: 'Producción'},
+    {image: Images.admin, text: 'Administracion'},
+    {image: Images.ventas, text: 'Ventas'},
+    {image: Images.sistemas, text: 'Sistemas'},
+    {image: Images.diseno, text: 'Diseño Gráfico'}
+
+]
+class Perfil extends Component {
+    state = {
+        modal: false,
+    }
+    render(){
+        return (
+            <ScrollView contentContainerStyle={styles.container}>
+                {perfiles.map((perfil, index) =>
+                    <TouchableOpacity
+                        key={index}
+                        activeOpacity={0.7}
+                        style={styles.itemContainer}
+                        onPress={() => this.setState({ modal: true })}
+                    >
+                        <View style={styles.item}>
+                            <Image
+                                resizeMode='contain'      
+                                source={perfil.image}
+                                style={styles.image}
+                            />
+                            <Text style={styles.text}>{perfil.text}</Text>
+                        </View>
+                    </TouchableOpacity>
+                )}
+                <Modal
+                    animationType="slide"
+                    transparent={false}
+                    visible={this.state.modal}
+                    onRequestClose={() => this.setState({ modal: false })}
+                    style={{backgroundColor:'rgba(255,255,255,0.5'}}
+                >
+                    <View style={{marginTop: 22}}>
+                        <Text>Hello World!</Text>
+                    </View>
+                </Modal>
+            </ScrollView>
+        );
+    }
+
 }
 const styles = StyleSheet.create({
 	container: {
+        width: '100%',
+        display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'row',
+        backgroundColor: '#a6cbe2'
+    },
+    itemContainer: {
+        width: '50%',
         padding: 10,
-	},
-	text: {
-		textAlign: 'center',
-		fontSize: 18,
-		marginBottom: 10
-	},
-	btn: {
-		backgroundColor: '#FFB74D'
     },
-    icon:{
-        height: Metrics.screenHeight * 0.15,
-        width: Metrics.screenHeight * 0.15,
-    },
-    title: {
-		fontSize: 26,
-		color: '#FFB74D',
-		textAlign: 'center'
-    },
-    iconContainer: {
+    item: {
+        backgroundColor: '#b4ddfb',
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        paddingVertical: 20,
+        paddingHorizontal: 5
+    },
+    text: {
+        fontWeight: '500',
+        fontSize: 18,
+        textAlign: 'center',
+        color: '#d58a36'
+    },
+    image: {
+        width: '100%',
+        height: 100
     }
 });
 export default Perfil

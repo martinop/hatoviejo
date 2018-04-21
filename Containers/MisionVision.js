@@ -28,10 +28,12 @@ const MisionVision = props => {
 const styles = StyleSheet.create({
 	container: {
 		padding: 10,
+		backgroundColor: '#a6cbe2',
 	},
 	title: {
-		fontSize: 26,
-		color: '#FFB74D',
+		fontSize: 42,
+		color: '#d58a36',
+		fontWeight: '500',
 		textAlign: 'center'
 	},
 	text: {

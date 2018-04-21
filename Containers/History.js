@@ -3,11 +3,22 @@ import {
   	StyleSheet,
 	Text,
 	ScrollView,
+	Image,
+	View
 } from 'react-native';
+import Images from '../Images'
+import Metrics from '../Themes/Metrics'
 
 const Historyy = props => {
 	return (
 		<ScrollView style={styles.container}>
+			<View style={styles.header}>
+				<Image
+					source={Images.history}
+					resize="contain"
+					style={styles.image}
+				/>
+			</View>
 			<Text style={styles.text}>
 				Nuestra empresa, nació el 13 de septiembre del año 1982 ya a tres décadas de presencia en el mercado
 				occidental. Nos iniciamos como una pequeña empresa familiar en las mismas áreas que hoy ocupamos,
@@ -34,12 +45,21 @@ const Historyy = props => {
 }
 const styles = StyleSheet.create({
 	container: {
-		padding: 10
-	},
+		padding: 10,
+		backgroundColor: '#a6cbe2',
+ 	},
 	text: {
-		textAlign: 'left',
+		textAlign: 'center',
 		fontSize: 18,
 		marginBottom: 10
 	},
+	header: {
+		flex: 1, 
+		alignItems: 'center'
+	},
+	image: {
+		width: Metrics.screenWidth, 
+		height: Metrics.screenWidth / 1.5
+	}
 });
 export default Historyy

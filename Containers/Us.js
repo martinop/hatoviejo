@@ -3,6 +3,7 @@ import {
   	StyleSheet,
 	Text,
 	Image,
+	View,
 	ScrollView,
 } from 'react-native';
 import Metrics from '../Themes/Metrics'
@@ -23,35 +24,30 @@ const Us = props => {
 			</Text>
 			<FullButton
 				text='Historia'
-				style={styles.btn}
 				onPress={()=>props.navigation.navigate('Historyy')}
-				containerStyle={{marginBottom: 15}}
 			/>
 			<FullButton
 				text='Misión y Visión'
-				style={styles.btn}
 				onPress={()=>props.navigation.navigate('MisionVision')}
-				containerStyle={{marginBottom: 15}}
 			/>
 			<FullButton
 				text='Perfil Corporativo'
-				style={styles.btn}
 				onPress={()=>props.navigation.navigate('Perfil')}
-				containerStyle={{marginBottom: 15}}
-			/>
-			
+			/>			
 		</ScrollView>
 	);
 }
 const styles = StyleSheet.create({
 	container: {
-		padding: 10,
-		paddingBottom: 30
+		backgroundColor: '#a6cbe2',
+		flex: 1
 	},
 	text: {
 		textAlign: 'center',
 		fontSize: 18,
-		marginBottom: 10
+		marginBottom: 10,
+		paddingVertical: 20,
+		paddingHorizontal: 10
 	},
 	btn: {
 		backgroundColor: '#FFB74D'

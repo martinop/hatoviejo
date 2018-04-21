@@ -83,7 +83,15 @@ export default StackNavigator({
 }, {
   initialRouteName: 'Home',
   navigationOptions: {
-    headerStyle: { backgroundColor: '#F57C00' },
-    headerTitleStyle: { fontWeight: '300' }
+    headerStyle: { 
+      backgroundColor: '#b4ddfb', 
+      borderBottomColor: '#a6cbe2', 
+      borderBottomWidth: 8,
+      height: 70
+    },
+    headerTitleStyle: { 
+      fontWeight: '500', 
+      color: '#d58a36',
+    }
   }
 })

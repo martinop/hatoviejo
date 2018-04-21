@@ -5,26 +5,28 @@ export default StyleSheet.create({
   buttonContainer: {
     flexDirection: 'row',
     width: '100%',
-    marginBottom: Metrics.smallMargin,
     backgroundColor: 'black',
-    borderRadius: Metrics.buttonRadius
+    borderBottomColor: '#a6cbe2',
+    borderBottomWidth: 8
+    
   },
   wrapper: {
     flex: 1,
     flexDirection: 'row',
-    borderRadius: Metrics.buttonRadius
   },
   button: {
     flexDirection: 'row',
     flex: 1,
-    borderRadius: Metrics.buttonRadius
+    backgroundColor: '#b4ddfb'
   },
   buttonText: {
     flex: 1,
-    padding: 8,
+    paddingVertical: 12,
     textAlign: 'center',
+    color: '#d58a36',
     backgroundColor: 'transparent',
-    fontSize: 20
+    fontSize: 22,
+    fontWeight: '500'
   },
   iconWrapper: {
     flex: 0,
