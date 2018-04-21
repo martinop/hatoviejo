@@ -23,20 +23,20 @@ export default class Home extends Component {
 					/>
 				</View>
 				<View>
-				<FullButton
-						text='Nosotros'
-						onPress={()=>this.props.navigation.navigate('Us')}
-					/>
 					<FullButton
-						text='Productos'
-						onPress={()=>this.props.navigation.navigate('Productos')}
-					/>
-					<FullButton
-						text='Recetas'
-					/>
-					<FullButton
-						text='Otros'
-					/>
+							text='Nosotros'
+							onPress={()=>this.props.navigation.navigate('Us')}
+						/>
+						<FullButton
+							text='Productos'
+							onPress={()=>this.props.navigation.navigate('Productos')}
+						/>
+						<FullButton
+							text='Recetas'
+						/>
+						<FullButton
+							text='Otros'
+						/>
 				</View>
 			</ScrollView>
     )

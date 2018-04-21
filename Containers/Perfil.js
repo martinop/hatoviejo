@@ -13,19 +13,38 @@ import Metrics from '../Themes/Metrics'
 import Images from '../Images'
 
 const perfiles = [
-    {image: Images.rrhh, text: 'Recursos Humanos'},
+    {image: Images.rrhh, text: 'Recursos Humanos', description: 'Selección, capacitación y supervisión del personal de Hato viejo.'},
     {image: Images.contabilidad, text: 'Contabilidad'},
-    {image: Images.mercadeo, text: 'Mercadeo'},
-    {image: Images.produccion, text: 'Producción'},
-    {image: Images.admin, text: 'Administracion'},
+    {image: Images.mercadeo, text: 'Mercadeo', 
+        description: 'Investigación de mercados, ejecución y planificación de estrategias relacionadas a las 4 P del mercado, márgenes de utilidad, imagen y posicionamiento de marcas. Lanzamiento de nuevos productos, para el desarrollo de negocios con la finalidad de satisfacer a nuestros consumidores.'},
+    {image: Images.produccion, text: 'Producción', 
+        description: 'Procesos de manufactura, logística, abastecimiento, calidad y mantenimiento, garantizando la eficiencia y eficacia en la gestión de los costos operacionales.'},
+    {image: Images.admin, text: 'Administracion', 
+        description: 'Planificar, organizar dirigir y controlar todos los procesos administrativos de nuestra empresa orientado a la gestión financiera, fiscal, compras, humana y tecnológica.'},
     {image: Images.ventas, text: 'Ventas'},
     {image: Images.sistemas, text: 'Sistemas'},
-    {image: Images.diseno, text: 'Diseño Gráfico'}
+    {image: Images.diseno, text: 'Diseño Gráfico'},
 
 ]
 class Perfil extends Component {
     state = {
         modal: false,
+        selected: null
+    }
+
+    renderModalContent(){
+        const selected = perfiles[this.state.selected]
+        return (
+            <View style={styles.modal}>
+                <Image
+                    resizeMode='contain'      
+                    source={selected.image}
+                    style={styles.image}
+                />
+                <Text style={[styles.text, {marginTop: 10, marginBottom: 20}]}>{selected.text}</Text>
+                {selected.description && <Text style={styles.description}>{selected.description}</Text>}
+            </View>
+        )
     }
     render(){
         return (
@@ -35,7 +54,7 @@ class Perfil extends Component {
                         key={index}
                         activeOpacity={0.7}
                         style={styles.itemContainer}
-                        onPress={() => this.setState({ modal: true })}
+                        onPress={() => this.setState({ modal: true, selected: index })}
                     >
                         <View style={styles.item}>
                             <Image
@@ -47,17 +66,22 @@ class Perfil extends Component {
                         </View>
                     </TouchableOpacity>
                 )}
-                <Modal
-                    animationType="slide"
-                    transparent={false}
-                    visible={this.state.modal}
-                    onRequestClose={() => this.setState({ modal: false })}
-                    style={{backgroundColor:'rgba(255,255,255,0.5'}}
-                >
-                    <View style={{marginTop: 22}}>
-                        <Text>Hello World!</Text>
-                    </View>
-                </Modal>
+
+                    <Modal
+                        animationType="fade"
+                        transparent={true}
+                        visible={this.state.modal}
+                        onRequestClose={() => this.setState({ modal: false })}
+                    >
+                        <TouchableOpacity 
+                            style={styles.modalContainer}
+                            onPress={() => this.setState({ modal: false, selected: null
+                            })}
+                        >
+                                {this.state.selected != null ? this.renderModalContent() : null}
+                        </TouchableOpacity>
+                    </Modal>
+
             </ScrollView>
         );
     }
@@ -84,9 +108,31 @@ const styles = StyleSheet.create({
     },
     text: {
         fontWeight: '500',
-        fontSize: 18,
+        fontSize: 16,
         textAlign: 'center',
         color: '#d58a36'
+    },
+    description: {
+        fontWeight: '300',
+        fontSize: 18,
+        color: '#d58a36',
+        textAlign: 'center',
+        paddingHorizontal: 15
+    },
+    modalContainer: {
+        backgroundColor: 'rgba(52, 52, 52, 0.65)',
+        flex: 1,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    modal: {
+        width: Metrics.screenWidth * 0.8,
+        backgroundColor: '#b4ddfb',
+        borderRadius: 40,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 30
     },
     image: {
         width: '100%',
