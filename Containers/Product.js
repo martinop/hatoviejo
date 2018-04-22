@@ -14,6 +14,7 @@ import { connect } from 'react-redux'
 
 import * as Actions from '../Actions'
 
+let to;
 class Product extends Component {
     state = {
         visible: false
@@ -22,10 +23,14 @@ class Product extends Component {
     addProduct({qtty, name}){
         this.props.addProduct({qtty, name })
         this.setState({ visible: true })
-        const to = setTimeout(() => {
+        to = setTimeout(() => {
             clearTimeout(to)
             this.setState({ visible: false})
         }, 3000)
+    }
+    
+    componentWillUnmount(){
+        clearTimeout(to)
     }
 
     render(){
