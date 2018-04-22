@@ -1,4 +1,4 @@
-package com.hatoviejo;
+package com.productoshatoviejo;
 
 import com.facebook.react.ReactActivity;
 

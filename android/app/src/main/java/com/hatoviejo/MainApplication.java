@@ -1,4 +1,4 @@
-package com.hatoviejo;
+package com.productoshatoviejo;
 
 import android.app.Application;
 
