@@ -1,21 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Provider, connect } from 'react-redux';
+import store from './store';
+import PropTypes from 'prop-types'
 import { StackNavigator } from 'react-navigation'
-
 import Historyy from './Containers/History'
 import Home from './Containers/Home'
 import MisionVision from './Containers/MisionVision'
 import Perfil from './Containers/Perfil'
 import Us from './Containers/Us'
 import Productos from './Containers/Products'
+import Product from './Containers/Product'
 import Pedidos from './Containers/Pedidos'
 import Tiendas from './Containers/Tiendas'
+import Cart from './Containers/Cart'
+
 import Cremas from './Containers/Cremas'
 import Jugos from './Containers/Jugos'
 import Mantequilla from './Containers/Mantequilla'
 import Quesos from './Containers/Quesos'
 import Sueros from './Containers/Sueros'
 
-export default StackNavigator({
+
+const AppNavigator = StackNavigator({
   Home: {
     screen: Home,
     navigationOptions: {
@@ -52,6 +58,12 @@ export default StackNavigator({
       title: 'Pedidos'
     })
   },
+  Cart: {
+    screen: Cart,
+    navigationOptions: ({navigation}) => ({
+      title: 'Carrito de compras'
+    })
+  },
   Tiendas: {
     screen: Tiendas,
     navigationOptions: ({navigation}) => ({
@@ -62,6 +74,12 @@ export default StackNavigator({
     screen: Productos,
     navigationOptions: ({navigation}) => ({
       title: 'Productos'
+    })
+  },
+  Product: {
+    screen: Product,
+    navigationOptions: ({navigation}) => ({
+      title: navigation.state.params.title
     })
   },
   Cremas: {
@@ -109,3 +127,10 @@ export default StackNavigator({
     }
   }
 })
+
+export default () => (
+  <Provider store={store}>
+    <AppNavigator />
+  </Provider>
+)
+  

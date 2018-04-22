@@ -19,6 +19,7 @@ const Pedidos = (props) => {
             <TouchableOpacity
                 activeOpacity={0.7}
                 style={styles.itemContainer}
+                onPress={()=> props.navigation.navigate('Cart')}
             >
                 <View style={styles.item}>
                     <Image
