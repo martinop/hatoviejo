@@ -14,16 +14,17 @@ import Images from '../Images'
 
 const perfiles = [
     {image: Images.rrhh, text: 'Recursos Humanos', description: 'Selección, capacitación y supervisión del personal de Hato viejo.'},
-    {image: Images.contabilidad, text: 'Contabilidad'},
+    {image: Images.contabilidad, text: 'Contabilidad',
+    description: 'Se encarga de instrumentar y operar las políticas, normas, sistemas y procedimientos necesarios para garantizar la exactitud y seguridad en la captación y registro de las operaciones financieras, presupuestales y de consecución de metas de la entidad.'},
     {image: Images.mercadeo, text: 'Mercadeo', 
         description: 'Investigación de mercados, ejecución y planificación de estrategias relacionadas a las 4 P del mercado, márgenes de utilidad, imagen y posicionamiento de marcas. Lanzamiento de nuevos productos, para el desarrollo de negocios con la finalidad de satisfacer a nuestros consumidores.'},
     {image: Images.produccion, text: 'Producción', 
         description: 'Procesos de manufactura, logística, abastecimiento, calidad y mantenimiento, garantizando la eficiencia y eficacia en la gestión de los costos operacionales.'},
     {image: Images.admin, text: 'Administracion', 
         description: 'Planificar, organizar dirigir y controlar todos los procesos administrativos de nuestra empresa orientado a la gestión financiera, fiscal, compras, humana y tecnológica.'},
-    {image: Images.ventas, text: 'Ventas'},
-    {image: Images.sistemas, text: 'Sistemas'},
-    {image: Images.diseno, text: 'Diseño Gráfico'},
+    {image: Images.ventas, text: 'Ventas', description: 'Elaborar pronósticos de ventas, establecer precios, realizar publicidad y promoción de ventas, llevar un adecuado control y análisis de las ventas.'},
+    {image: Images.sistemas, text: 'Sistemas', description: 'Administra los bienes y servicios de la plataforma tecnológica en Software y Hardware, el soporte técnico de los equipos, el desarrollo y mantenimiento de las aplicaciones y la administración de los servidores Institucionales para asegurar el correcto funcionamiento de las tareas diarias.'},
+    {image: Images.diseno, text: 'Diseño Gráfico', description: 'Comunicar la ideas valores y conceptos de nuestros clientes gráficamente. El objetivo de este proceso es crear un soporte visual que sea capaz de trasladar y comunicar un mensaje concreto a nuestro público objetivo.'},
 
 ]
 class Perfil extends Component {

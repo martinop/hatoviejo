@@ -28,6 +28,16 @@ const images = {
     nectarPera: require('./nectarpera.png'),
     quesoMozarella: require('./quesomozarella.png'),
     suero: require('./suero.png'),
+    duraznoHeader: require('./duraznoHeader.png'),
+    especiasHeader: require('./especiasHeader.png'),
+    lecheHeader: require('./lecheHeader.png'),
+    mantequillaHeader: require('./mantequillaHeader.png'),
+    manzanaHeader: require('./manzanaHeader.png'),
+    mozzarellaHeader: require('./mozzarellaHeader.png'),
+    naranjaHeader: require('./naranjaHeader.png'),
+    peraHeader: require('./peraHeader.png'),
+    sueroHeader: require('./sueroHeader.png'),
+    ricottaHeader: require('./ricottaHeader.png')
   }
   
   export default images

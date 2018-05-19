@@ -15,7 +15,7 @@ export default class Home extends Component {
 
   render() {
     return (
-			<ScrollView contentContainerStyle={styles.flex}>
+			<ScrollView contentContainerStyle={styles.flex} style={styles.main}>
 				<View style={styles.flex}>
 					<Image
 						source={Images.headerHome}
@@ -35,9 +35,6 @@ export default class Home extends Component {
 							text='Pedidos'
 							onPress={()=>this.props.navigation.navigate('Pedidos')}
 						/>
-						<FullButton
-							text='Otros'
-						/>
 				</View>
 			</ScrollView>
     )
@@ -46,7 +43,11 @@ export default class Home extends Component {
 
 const styles = StyleSheet.create({
 	flex: {
-		flex: 1
+		flex: 1,
+		backgroundColor: '#a6cbe2',
+	},
+	main: {
+		backgroundColor: '#a6cbe2',
 	},
 	header: {
 		flex: 1, 
