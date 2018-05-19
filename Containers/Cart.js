@@ -40,7 +40,7 @@ class Cart extends Component {
                     {
                     "to": [
                         {
-                        "email": "martinocandop@gmail.com"
+                        "email": "d.graficohv@gmail.com"
                         }
                     ],
                     "subject": `${name} ha realizado un pedido`
