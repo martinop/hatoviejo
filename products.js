@@ -23,7 +23,7 @@ export default [
         image: Images.ricotta,
         header: Images.ricottaHeader,
         title: 'Ricotta',
-        text: "",
+        text: "Es un queso obtenido de un segundo procesamiento del lácteo producido como derivado en la elaboración de quesos de pasta blanda. De color blanco, sabor suave y textura blanda y granulosa, se emplea para postres y platos salados por igual.",
 	},
 	{
         image: Images.jugoNaranja,
