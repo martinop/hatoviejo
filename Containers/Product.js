@@ -20,8 +20,8 @@ class Product extends Component {
         visible: false
     }
 
-    addProduct({qtty, name}){
-        this.props.addProduct({qtty, name })
+    addProduct({qtty, name, image}){
+        this.props.addProduct({qtty, name, image})
         this.setState({ visible: true })
         to = setTimeout(() => {
             clearTimeout(to)
@@ -37,6 +37,7 @@ class Product extends Component {
         const { params } = this.props.navigation.state
         const text = params ? params.text : null
         const header = params ? params.header : null
+        const image = params ? params.image : null
     
         return (
             <ScrollView contentContainerStyle={styles.contentContainer} style={styles.container}>
@@ -47,14 +48,14 @@ class Product extends Component {
                 />}
                 <Text style={styles.text}>{text}</Text>
                 {this.state.visible && (
-                    <Text style={styles.indicator}>{`Se agrego (${1}) ${params.title} al carrito`}</Text>
+                    <Text style={styles.indicator}>{`Se agrego (${1}) cesta de ${params.title} al carrito`}</Text>
                 )}
                 <FullButton
                     textStyle={{color: 'white'}}
                     containerStyle={styles.buttonContainer}
                     style={styles.button}
                     text='Añadir producto'
-                    onPress={()=> this.addProduct({ qtty: 1, name: params.title })}
+                    onPress={()=> this.addProduct({ image, qtty: 1, name: params.title })}
                 />
             </ScrollView>
         )

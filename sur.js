@@ -9,9 +9,9 @@ export default [
   {
     "nombre": "PAN RECOR INVERSIONES, C.A.",
     "rif": "j409233944",
-    "contacto": "MARTHA BOLA�OS",
+    "contacto": "MARTHA BOLAÑOS",
     "telefono": "04140693301-04",
-    "direccion": "CALLE 2 LOCAL N� 23A URB VILLA PARAISO EL BAJO ZULIA"
+    "direccion": "CALLE 2 LOCAL N* 23A URB VILLA PARAISO EL BAJO ZULIA"
   },
   {
     "nombre": "PANADERIA EL PROGRESO, C.A.",
@@ -88,7 +88,7 @@ export default [
     "rif": "J305610002",
     "contacto": "",
     "telefono": "",
-    "direccion": "CALLE 100 LOCAL N�32 EL CAUJARO - LOS CORTIJOS"
+    "direccion": "CALLE 100 LOCAL N* 32 EL CAUJARO - LOS CORTIJOS"
   },
   {
     "nombre": "AUTOMERCADO EURO DELI, C.A",
@@ -116,7 +116,7 @@ export default [
     "rif": "J299917737",
     "contacto": "",
     "telefono": "",
-    "direccion": "LA CA�ADA"
+    "direccion": "LA CAÑADA"
   },
   {
     "nombre": "CHARCUTERIA EL GRANO DE MOSTAZA, C.A.",
@@ -217,7 +217,7 @@ export default [
     "direccion": "URB EL SAMAN"
   },
   {
-    "nombre": "COMERCIALIZADORA QUINTERO VILLALOBOS COMPA�IA ANONIMA",
+    "nombre": "COMERCIALIZADORA QUINTERO VILLALOBOS COMPAÑIA ANONIMA",
     "rif": "J298816775",
     "contacto": "",
     "telefono": "04121077264",
@@ -240,7 +240,7 @@ export default [
   {
     "nombre": "DISTRIBUIDORA DE VIVERES EL PUNTO NUEVO, C.A",
     "rif": "J408584506",
-    "contacto": "DESIRE PE�A",
+    "contacto": "DESIRE PEÑA",
     "telefono": "04246455905",
     "direccion": "AV. PRINCIPAL DE LA POMONA CALLE 102 LOCAL NRO. 18A-99 SECTOR LA POMONA MARACAIBO ZULIA"
   },
@@ -301,11 +301,11 @@ export default [
     "direccion": "AV 15 SIERRA MAESTRA"
   },
   {
-    "nombre": "HIPERMERCADO SAN JOSE, COMPA�IA ANONIMA.",
+    "nombre": "HIPERMERCADO SAN JOSE, COMPAÑIA ANONIMA.",
     "rif": "J404391258",
     "contacto": "CARLOS GONZALEZ",
     "telefono": "04246773360",
-    "direccion": "AV. 1 CALLE 26 LOCAL NRO. 28-12 SECTOR SEMERUCO LA CA�ADA DE URDANETA LACONCEPCION"
+    "direccion": "AV. 1 CALLE 26 LOCAL NRO. 28-12 SECTOR SEMERUCO LA CAÑADA DE URDANETA LACONCEPCION"
   },
   {
     "nombre": "INMODAVID, C.A.",
@@ -385,7 +385,7 @@ export default [
     "direccion": "BARRIO EL CALLAO CALLE 173"
   },
   {
-    "nombre": "INVERSIONES LONZA FERRER MU�OZ, C.A.",
+    "nombre": "INVERSIONES LONZA FERRER MUÑOZ, C.A.",
     "rif": "J407503189",
     "contacto": "JOSE ATENCIO",
     "telefono": "",
@@ -417,7 +417,7 @@ export default [
     "rif": "J306767444",
     "contacto": "JESICA PEREZ",
     "telefono": "04146299403",
-    "direccion": "CARRETERA VIA LA CA�ADA SECTOR 8 1/2 LA CA�ADA DE URDANETA EL CARMELO ZULIA"
+    "direccion": "CARRETERA VIA LA CAÑADA SECTOR 8 1/2 LA CAÑADA DE URDANETA EL CARMELO ZULIA"
   },
   {
     "nombre": "INVERSIONES SOCORRO MORAN, C.A",
@@ -443,7 +443,7 @@ export default [
   {
     "nombre": "LA CASA DE LOS QUESOS, C.A.",
     "rif": "J294954464",
-    "contacto": "leonardo iba�ez",
+    "contacto": "LEONARDO IBAÑEZ",
     "telefono": "04146079900",
     "direccion": "URB. EL SOLER CALLE 200 AV. PPAL."
   },
@@ -466,10 +466,10 @@ export default [
     "rif": "J298974656",
     "contacto": "LUIS URDANETA",
     "telefono": "04140599434",
-    "direccion": "AV PPAL LOCAL #22-32 SECTOR EL TOPITO LA CA�ADA  DE URDANETA MARACAIBO - ZULIA"
+    "direccion": "AV PPAL LOCAL #22-32 SECTOR EL TOPITO LA CAÑADA  DE URDANETA MARACAIBO - ZULIA"
   },
   {
-    "nombre": "LA SALVACI�N DE CRISTO",
+    "nombre": "LA SALVACION DE CRISTO",
     "rif": "V11298831",
     "contacto": "",
     "telefono": "",
@@ -490,7 +490,7 @@ export default [
     "direccion": "CALLE 18 BARRIO SIERRA MAESTRA"
   },
   {
-    "nombre": "MANUEL NU�EZ",
+    "nombre": "MANUEL NUÑEZ",
     "rif": "V5054668",
     "contacto": "",
     "telefono": "",
@@ -525,14 +525,14 @@ export default [
     "direccion": "LA ESQUINA DEL SUR"
   },
   {
-    "nombre": "OCA�A INVERSIONES C.A",
+    "nombre": "OCAÑA INVERSIONES C.A",
     "rif": "J402013434",
     "contacto": "",
     "telefono": "",
     "direccion": "CALLE 171 LOCAL NRO 49E-O7A"
   },
   {
-    "nombre": "PANADERIA & CHARCUTERIA HM, COMPA�IA ANONIMA",
+    "nombre": "PANADERIA & CHARCUTERIA HM, COMPAÑIA ANONIMA",
     "rif": "J409252469",
     "contacto": "DESIRE PADRON",
     "telefono": "04161629695",
@@ -686,14 +686,14 @@ export default [
     "direccion": "AV 491 CASA207-186 URB. LOS SAMANES"
   },
   {
-    "nombre": "PANADER�A Y MINI MERCADO DELICIAS DEL SUR, C.A",
+    "nombre": "PANADERIA Y MINI MERCADO DELICIAS DEL SUR, C.A",
     "rif": "J403969841",
     "contacto": "",
     "telefono": "0261-7626303 /",
     "direccion": "CALLE 161 URBANIZACION SAN FRANCISCO SECTOR 09"
   },
   {
-    "nombre": "PANADER�A Y PASTELER�A JUAN PABLO C.A",
+    "nombre": "PANADERIA Y PASTELERIA JUAN PABLO C.A",
     "rif": "J316634221",
     "contacto": "ANA BENAVIDEZ",
     "telefono": "02617377175",
@@ -707,7 +707,7 @@ export default [
     "direccion": "AVENIDA 22 SECTOR LA SONRISA"
   },
   {
-    "nombre": "PANADERIA Y PASTELERIA Q�PAN, C. A.",
+    "nombre": "PANADERIA Y PASTELERIA Q' PAN, C. A.",
     "rif": "J295648090",
     "contacto": "ELIO FEREIRA",
     "telefono": "04146530317",
@@ -875,14 +875,14 @@ export default [
     "direccion": "AV PPAL CASA #31-73 SECTOR LOS POZOS LA CONCEPCION"
   },
   {
-    "nombre": "SUPER SAM�N, C.A.",
+    "nombre": "SUPER SAMAN, C.A.",
     "rif": "J403337195",
     "contacto": "",
     "telefono": "",
     "direccion": "VIA PERIJA CC SAMAN LOCAL"
   },
   {
-    "nombre": "SUPER TIENDA Y CHARCUTERIA PA�QUE JOSEITO, C.A.",
+    "nombre": "SUPER TIENDA Y CHARCUTERIA PA' QUE JOSEITO, C.A.",
     "rif": "J403798257",
     "contacto": "",
     "telefono": "04121208737 /",
@@ -952,7 +952,7 @@ export default [
     "direccion": "CALLE 170 LOCAL NRO 42-09B URB LA COROMOTO"
   },
   {
-    "nombre": "YARFER COMPA�IA ANONIMA",
+    "nombre": "YARFER COMPAÑIA ANONIMA",
     "rif": "J314937596",
     "contacto": "YARELY NAVARRO",
     "telefono": "04146619233",

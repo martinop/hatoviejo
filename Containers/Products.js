@@ -21,7 +21,7 @@ const Productos = (props) => {
 				<TouchableOpacity
 					key={index}
                     activeOpacity={0.7}
-                    onPress={() => props.navigation.navigate('Product', {title: perfil.title, text: perfil.text, header: perfil.header})}
+                    onPress={() => props.navigation.navigate('Product', {image: perfil.image, title: perfil.title, text: perfil.text, header: perfil.header})}
 					style={styles.itemContainer}
 				>
 					<View style={styles.item}>

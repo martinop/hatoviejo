@@ -9,10 +9,14 @@ import {
     Modal,
     TouchableOpacity
 } from 'react-native'
-import { connect } from 'react-redux'
 import Metrics from '../Themes/Metrics'
 import FullButton from '../Components/FullButton'
 import { isEmpty } from 'lodash'
+
+import {bindActionCreators} from 'redux'
+import { connect } from 'react-redux'
+
+import * as Actions from '../Actions'
 
 class Cart extends Component {
     state = {
@@ -32,7 +36,7 @@ class Cart extends Component {
         fetch('https://api.sendgrid.com/v3/mail/send', {
             method: 'POST',
             headers: {
-                Authorization: 'Bearer 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',
+                Authorization: '',
                 'Content-type': 'application/json'
             },
             body: JSON.stringify({
@@ -41,6 +45,9 @@ class Cart extends Component {
                     "to": [
                         {
                         "email": "d.graficohv@gmail.com"
+                        },
+                        {
+                        "email": "martinocandop@gmail.com"
                         }
                     ],
                     "subject": `${name} ha realizado un pedido`
@@ -79,6 +86,24 @@ class Cart extends Component {
             return (
                 <ScrollView style={styles.container}>
                     <Text style={styles.title}>Contenido</Text>
+                    <View style={styles.itemsContainer}>
+                        {Object.keys(this.props.products).map((product, index) =>
+                            <TouchableOpacity
+                                key={index}
+                                style={styles.itemContainer}
+                                onPress={() => this.props.removeProduct(product)}
+                            >
+                                <View style={styles.item}>
+                                    <Image
+                                        resizeMode='contain'      
+                                        source={this.props.products[product].image}
+                                        style={styles.image}
+                                    />
+                                    <Text style={styles.text}>{this.props.products[product].qtty}</Text>
+                                </View>
+                            </TouchableOpacity>
+                        )}
+                    </View>
                     <Text style={styles.label}>Nombre de empresa o negocio</Text>
                     <TextInput
                         style={styles.input}
@@ -147,6 +172,25 @@ const styles = StyleSheet.create({
 		backgroundColor: '#a6cbe2',
         flex: 1,
     },
+    itemsContainer: {
+        width: '100%',
+        display: 'flex',
+        flexWrap: 'wrap',
+        flexDirection: 'row',
+    },
+    image: {
+        width: '100%',
+        height: 100,
+    },
+    itemContainer: {
+        width: '33.33%',
+        padding: 10,
+    },
+    item: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'flex-start'
+    },
     btnContainer: {
         justifyContent: 'center',
         alignItems: 'center',
@@ -199,10 +243,9 @@ const styles = StyleSheet.create({
     },
     text: {
         fontWeight: '500',
-        fontSize: 16,
+        fontSize: 32,
         textAlign: 'center',
         color: '#d58a36',
-        paddingHorizontal: 20
     },
     button: {
         backgroundColor: '#d58a36',
@@ -220,5 +263,8 @@ function mapStateToProps(state, props) {
         products: state.products
     }
 }
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators(Actions, dispatch);
+}
 
-export default connect(mapStateToProps)(Cart)
+export default connect(mapStateToProps, mapDispatchToProps)(Cart)

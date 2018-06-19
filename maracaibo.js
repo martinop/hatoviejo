@@ -7,7 +7,7 @@ export default [
     "direccion": "AV. 4  BELLA VISTA EDF. DELTA PISO 5 LOCAL 21 SECTOR BELLA VISTA"
   },
   {
-    "nombre": "LUSITANA EXPRESS, COMPA�IA ANONIMA",
+    "nombre": "LUSITANA EXPRESS, COMPAÑIA ANONIMA",
     "rif": "J405225769",
     "contacto": "EDINSON LOPEZ",
     "telefono": "04146117349 /",
@@ -49,7 +49,7 @@ export default [
     "direccion": "CALLE 88 CC DON LUIS LOCAL"
   },
   {
-    "nombre": "CHARCUTERIA EL CA�ADERO, SA",
+    "nombre": "CHARCUTERIA EL CAÑADERO, SA",
     "rif": "J295025335",
     "contacto": "MARIELY PAZ",
     "telefono": "04146477443",
@@ -84,7 +84,7 @@ export default [
     "direccion": "AVENIDA 4 BELLA VISTA C/C 63 CC NORTE L - 9"
   },
   {
-    "nombre": "CHEESE EXPRESS, COMPA��A ANONIMA",
+    "nombre": "CHEESE EXPRESS, COMPAÑIA ANONIMA",
     "rif": "J410383933",
     "contacto": "KATERIN CASTRO",
     "telefono": "04126913666",
@@ -119,7 +119,7 @@ export default [
     "direccion": "CALLE 84 CON AV 2B CC EL VALLE NIVEL PB LOCAL 3 SECTOR VALLE FRIO"
   },
   {
-    "nombre": "DISTRIBUIDORA Y CHARCUTER�A J & D, C.A.",
+    "nombre": "DISTRIBUIDORA Y CHARCUTERIA J & D, C.A.",
     "rif": "J407567500",
     "contacto": "",
     "telefono": "",
@@ -133,7 +133,7 @@ export default [
     "direccion": "AV 4 ( BELLA VISTA ) EDIF CATATUMBO PISO BB LOCAL  1-2-3 SECTOR  BELLA VISTA"
   },
   {
-    "nombre": "FROG�S RESTAURANT VILLA DEL ROSARIO, C.A",
+    "nombre": "FROG'S RESTAURANT VILLA DEL ROSARIO, C.A",
     "rif": "J401491855",
     "contacto": "FEDERICO LEON",
     "telefono": "04146202401",
@@ -203,7 +203,7 @@ export default [
     "direccion": "AV 8B ENTRE CALLE 64 Y 65"
   },
   {
-    "nombre": "INVERSIONES NARCAS, COMPA�IA ANONIMA",
+    "nombre": "INVERSIONES NARCAS, COMPAÑIA ANONIMA",
     "rif": "J404226460",
     "contacto": "JENIFFER",
     "telefono": "02617974398",
@@ -238,7 +238,7 @@ export default [
     "direccion": "CUATRICENTENARIO"
   },
   {
-    "nombre": "LA ESTACION DEL QUESO, COMPA�IA ANONIMA",
+    "nombre": "LA ESTACION DEL QUESO, COMPAÑIA ANONIMA",
     "rif": "J406122629",
     "contacto": "JUAN MORENO",
     "telefono": "04246190390/04",
@@ -427,7 +427,7 @@ export default [
     "direccion": "AV. 2B N-83-31 SECTOR VALLE CIMA, C.A."
   },
   {
-    "nombre": "SUPER PANADERIA SAGRES MILLENIUM, COMPA��A ANONIMA",
+    "nombre": "SUPER PANADERIA SAGRES MILLENIUM, COMPAÑIA ANONIMA",
     "rif": "J297523103",
     "contacto": "MORAIMA LOPEZ - VANESA",
     "telefono": "0261-7410041 /",
@@ -466,7 +466,7 @@ export default [
     "rif": "j404382844",
     "contacto": "GUSTAVO GOMEZ",
     "telefono": "04146269070",
-    "direccion": "Av. 9BCON CALLE 89 CASA N� 9B-08 SECTOR VERITAS"
+    "direccion": "Av. 9BCON CALLE 89 CASA N* 9B-08 SECTOR VERITAS"
   },
   {
     "nombre": "SUPERMERCADO Y FRUTERIA CALIFORNIA, C.A.",
@@ -497,9 +497,9 @@ export default [
     "direccion": "CALLE 59B CASA #68A-38 PARCELAMIENTO VILLA CHIQUINQUIRA 1"
   },
   {
-    "nombre": "VIVERES PALMITAS, COMPA��A AN�NIMA",
+    "nombre": "VIVERES PALMITAS, COMPAÑIA ANONIMA",
     "rif": "J404848142",
-    "contacto": "JOHANA GUDI�O",
+    "contacto": "JOHANA GUDIÑO",
     "telefono": "02617936480 /",
     "direccion": "AVENIDA 3D ENTRE CALE 79 Y 80 SECTOR VALLE FRIO"
   }
